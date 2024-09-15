@@ -1,0 +1,25 @@
+body{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.exp-1, .exp-2{
+  flex: 1;
+  border: solid 1px grey;
+  height: 625px;
+}
+.exp-1{
+  margin-right: 30px;
+  margin-left: 80px;
+}
+.exp-2{
+  margin-left: 30px;
+  margin-right: 80px;
+}
