@@ -13,7 +13,8 @@ body{
 .exp-1, .exp-2{
   flex: 1;
   border: solid 1px grey;
-  height: 625px;
+  height: 600px;
+  border-radius: 40px;
 }
 .exp-1{
   margin-right: 30px;
