@@ -1,0 +1,14 @@
+.mid{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Roboto;
+  font-size: 50px;
+  color: grey;
+  transition: font-size 1s, color 1s;
+}
+.mid:hover{
+  color: white;
+  font-size: 60px;
+}
