@@ -9,14 +9,14 @@ body{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Roboto;
-  font-size: 50px;
+  font-family: Papyrus;
+  font-size: 60px;
   color: grey;
-  transition: font-size 1s, color 1s;
+  transition: font-size 0.7s, color 0.7s;
 }
 .mid:hover{
   color: white;
-  font-size: 60px;
+  font-size: 65px;
 }
 .info-bar{
   position: absolute;
@@ -35,11 +35,16 @@ body{
   background-color: transparent;
   border: 2px grey;
   border-radius: 10px;
-  transition: height 1s, width 1s, font-size 1s, color 1s;
+  transition: height 0.7s, width 0.7s, font-size 0.7s, color 0.7s;
 }
 .button:hover{
   height: 65px;
   width: 115px;
   font-size: 27px;
   color: white;
+}
+.button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
