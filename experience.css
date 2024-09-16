@@ -9,18 +9,34 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
 }
 .exp-1, .exp-2{
-  flex: 1;
-  border: solid 1px grey;
-  height: 600px;
+  border: solid 2px grey;
   border-radius: 40px;
+  color: grey;
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  transition: border 0.5s, color 0.5s, width 0.5s, height 0.5s, transform 0.5s, opacity 0.5s;
+  position: relative;
+  left: 0;
 }
 .exp-1{
-  margin-right: 30px;
-  margin-left: 80px;
+  margin-bottom: 15px;
 }
 .exp-2{
-  margin-left: 30px;
-  margin-right: 80px;
+  margin-top: 15px;
+}
+.exp-1:hover, .exp-2:hover{
+  color: white;
+  border: solid 2px white;
+  width: 520px;
+  height: 60px;
+  transform: translateX(-50%)
+}
+.hidden {
+  opacity: 0;
 }
