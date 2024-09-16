@@ -1,0 +1,38 @@
+.game-button{
+  height:120px;
+  width: 120px;
+  border-radius: 60px;
+  margin: 5px;
+  background-color: rgb(25,25,25);
+  border:2px solid white;
+  cursor:pointer;
+}
+.reset-score, .auto-play-button{
+  height:50px;
+  width:120px;
+  font-family: Roboto;
+  font-size:15px;
+  cursor:pointer;
+}
+.image-game{
+  height:60px;
+}
+.result{
+  margin-top: 50px;;
+  font-family: Roboto;
+  color:white;
+  font-size:25px;
+  font-weight: bold;
+}
+.moves{
+  font-family: Roboto;
+  color:white;
+  font-size:25px;
+  font-weight: bold;
+}
+.score{
+  font-family: Roboto;
+  color:white;
+  font-size:25px;
+  font-weight: bold;
+}
