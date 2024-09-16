@@ -12,7 +12,7 @@ body{
   font-family: Papyrus;
   font-size: 60px;
   color: grey;
-  transition: font-size 0.7s, color 0.7s;
+  transition: font-size 0.5s, color 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@ body{
   background-color: transparent;
   border: 2px grey;
   border-radius: 10px;
-  transition: height 0.7s, width 0.7s, font-size 0.7s, color 0.7s;
+  transition: height 0.5s, width 0.5s, font-size 0.5s, color 0.5s;
 }
 .button:hover{
   height: 65px;
