@@ -30,7 +30,7 @@ body{
 .exp-2{
   margin-top: 15px;
 }
-.exp-1:hover, .exp-2:hover{
+.exp-1:active, .exp-2:active{
   color: white;
   border: solid 2px white;
   width: 520px;
