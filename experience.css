@@ -10,12 +10,13 @@ body{
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+  position: relative;
 }
 .exp-1, .exp-2{
   border: solid 2px grey;
   border-radius: 40px;
   color: grey;
-  width: 500px;
+  width: 350px;
   height: 50px;
   font-size: 30px;
   padding-left: 20px;
@@ -30,13 +31,58 @@ body{
 .exp-2{
   margin-top: 15px;
 }
-.exp-1:active, .exp-2:active{
+.exp-1:hover{
   color: white;
   border: solid 2px white;
-  width: 520px;
+  width: 400px;
+  height: 60px;
+  transform: translateX(-50%)
+}
+.exp-2:hover{
+  color: white;
+  border: solid 2px white;
+  width: 400px;
   height: 60px;
   transform: translateX(-50%)
 }
 .hidden {
   opacity: 0;
+}
+.exp-1-info{
+  margin-left:200px;
+}
+.exp-1-info {
+  visibility: hidden;
+  color: white;
+  font-family: Roboto;
+  position: absolute;
+  top: 30%;
+  left: 900px; 
+  padding: 10px;
+  border-radius: 5px;
+  width: 600px;
+  opacity:0;
+  transition: opacity 1s, visibility 1s;
+}
+
+.exp-1:hover + .exp-1-info {
+  visibility: visible;
+  opacity:1;
+}
+.exp-2-info{
+  visibility: hidden;
+  color: white;
+  font-family: Roboto;
+  position: absolute;
+  top: 30%;
+  left: 1100px; 
+  padding: 10px;
+  border-radius: 5px;
+  width: 600px;
+  opacity:0;
+  transition: opacity 1s, visibility 1s;
+}
+.exp-2:hover + .exp-2-info {
+  visibility: visible;
+  opacity:1;
 }
