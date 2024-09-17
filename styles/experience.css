@@ -1,5 +1,5 @@
 body{
-  background-image: url(background.jpg);
+  background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -11,6 +11,14 @@ body{
   height: 100vh;
   flex-direction: column;
   position: relative;
+}
+.position{
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: italic;
+  margin-top: -200px;
+  margin-bottom: 150px;
 }
 .exp-1, .exp-2{
   border: solid 2px grey;
@@ -32,7 +40,7 @@ body{
   margin-top: 15px;
 }
 .exp-1:hover{
-  color: white;
+  color: rgb(158, 157, 157);
   border: solid 2px white;
   width: 400px;
   height: 60px;
@@ -57,7 +65,7 @@ body{
   font-family: Roboto;
   position: absolute;
   top: 30%;
-  left: 900px; 
+  left: 1000px; 
   padding: 10px;
   border-radius: 5px;
   width: 600px;
@@ -75,7 +83,7 @@ body{
   font-family: Roboto;
   position: absolute;
   top: 30%;
-  left: 1100px; 
+  left: 1200px; 
   padding: 10px;
   border-radius: 5px;
   width: 600px;
