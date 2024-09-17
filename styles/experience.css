@@ -13,8 +13,8 @@ body{
   position: relative;
 }
 .position{
-  color: white;
-  font-family: Roboto;
+  color: grey;
+  font-family: Comic Sans MS;
   font-size: 40px;
   font-style: italic;
   margin-top: -200px;
