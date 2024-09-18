@@ -25,6 +25,8 @@ body{
   font-size: 20px;
   border-radius: 50px;
   transition: height 0.5s, width 0.5s, border 0.5s, color 0.5s, font-size 0.5s;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .button:hover{
   height: 225px;
