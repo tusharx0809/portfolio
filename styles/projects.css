@@ -1,0 +1,35 @@
+body{
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  margin: 0; 
+}
+.center{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  height: 200px;
+  width: 300px;
+  background: transparent;
+  border: 2px solid grey;
+  font-family: Roboto;
+  color: grey;
+  font-size: 20px;
+  border-radius: 50px;
+  transition: height 0.5s, width 0.5s, border 0.5s, color 0.5s, font-size 0.5s;
+}
+.button:hover{
+  height: 225px;
+  width: 345px;
+  border-color: white;
+  color: white;
+  font-size: 25px;
+}
