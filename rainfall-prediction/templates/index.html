@@ -2,17 +2,19 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rainfall Prediction</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../../styles/rainfall-prediction.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="login">
-    <h1>Rainfall Prediction</h1>
+  
+    <div class="heading">
+      <h1>Rainfall Prediction</h1>
+    </div>
+    <div class="form">
     <form action="{{ url_for('predict')}}" method="post">
-      <input type="date" name="Date" placeholder="Date" required="required" /><br>
+      <input class ="input "type="date" name="Date" placeholder="Date" required="required" /><br>
       <select name="Location" required="required">
         <option value="" disabled selected>Select Location</option>
         <option value="Albury">Albury</option>
@@ -65,32 +67,33 @@
         <option value="Katherine">Katherine</option>
         <option value="Uluru">Uluru</option>
       </select><br>
-      <input type="text" name="MinTemp" placeholder="MinTemp" required="required" /><br>
-      <input type="text" name="MaxTemp" placeholder="MaxTemp" required="required" /><br>
-      <input type="text" name="Rainfall" placeholder="Rainfall" required="required" /><br>
-      <input type="text" name="Evaporation" placeholder="Evaporation" required="required" /><br>
-      <input type="text" name="Sunshine" placeholder="Sunshine" /><br>
-      <input type="text" name="WindGustDir" placeholder="WindGustDir" required="required" /><br>
-      <input type="text" name="WindGustSpeed" placeholder="WindGustSpeed" required="required" /><br>
-      <input type="text" name="WindDir9am" placeholder="WindDir9am" required="required" /><br>
-      <input type="text" name="WindDir3pm" placeholder="WindDir3pm" required="required" /><br>
-      <input type="text" name="WindSpeed9am" placeholder="WindSpeed9am" required="required" /><br>
-      <input type="text" name="WindSpeed3pm" placeholder="WindSpeed3pm" required="required" /><br>
-      <input type="text" name="Humidity9am" placeholder="Humidity9am" required="required" /><br>
-      <input type="text" name="Humidity3pm" placeholder="Humidity3pm" required="required" /><br>
-      <input type="text" name="Pressure9am" placeholder="Pressure9am" required="required" /><br>
-      <input type="text" name="Pressure3pm" placeholder="Pressure3pm" required="required" /><br>
-      <input type="text" name="Cloud9am" placeholder="Cloud9am" required="required" /><br>
-      <input type="text" name="Cloud3pm" placeholder="Cloud3pm" required="required" /><br>
-      <input type="text" name="Temp9am" placeholder="Temp9am" required="required" /><br>
-      <input type="text" name="Temp3pm" placeholder="Temp3pm" required="required" /><br>
+      <input class = "input" type="text" name="MinTemp" placeholder="MinTemp" required="required" /><br>
+      <input class ="input" type="text" name="MaxTemp" placeholder="MaxTemp" required="required" /><br>
+      <input class ="input" type="text" name="Rainfall" placeholder="Rainfall" required="required" /><br>
+      <input class ="input"  type="text" name="Evaporation" placeholder="Evaporation" required="required" /><br>
+      <input class ="input"  type="text" name="Sunshine" placeholder="Sunshine" /><br>
+      <input class ="input"  type="text" name="WindGustDir" placeholder="WindGustDir" required="required" /><br>
+      <input class ="input"  type="text" name="WindGustSpeed" placeholder="WindGustSpeed" required="required" /><br>
+      <input class ="input"  type="text" name="WindDir9am" placeholder="WindDir9am" required="required" /><br>
+      <input class ="input"  type="text" name="WindDir3pm" placeholder="WindDir3pm" required="required" /><br>
+      <input class ="input"  type="text" name="WindSpeed9am" placeholder="WindSpeed9am" required="required" /><br>
+      <input class ="input"  type="text" name="WindSpeed3pm" placeholder="WindSpeed3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Humidity9am" placeholder="Humidity9am" required="required" /><br>
+      <input class ="input"  type="text" name="Humidity3pm" placeholder="Humidity3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Pressure9am" placeholder="Pressure9am" required="required" /><br>
+      <input class ="input"  type="text" name="Pressure3pm" placeholder="Pressure3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Cloud9am" placeholder="Cloud9am" required="required" /><br>
+      <input class ="input"  type="text" name="Cloud3pm" placeholder="Cloud3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Temp9am" placeholder="Temp9am" required="required" /><br>
+      <input class ="input"  type="text" name="Temp3pm" placeholder="Temp3pm" required="required" /><br>
       <select name="RainToday" required="required">
         <option value="" disabled selected>Select Rain Today</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select><br>
-      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><br>
+      <button type="submit" class="btn">Predict</button><br>
     </form>
+  </div>
     <br>
     <br>
     {{ prediction_text }}
