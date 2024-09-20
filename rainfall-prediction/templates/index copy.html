@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainfall Prediction</title>
+  <link rel="stylesheet" href="../../styles/rainfall-prediction.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+      <h1>Australia Rainfall Prediction - Will It Rain Tomorrow?(Can only be run with Flask!)</h1>
+    </div>
+    <div class="form">
+    <form action="{{ url_for('predict')}}" method="post">
+      <input class ="input "type="date" name="Date" placeholder="Date" required="required" /><br>
+      <select name="Location" required="required">
+        <option value="" disabled selected>Select Location</option>
+        <option value="Albury">Albury</option>
+        <option value="BadgerysCreek">Badgerys Creek</option>
+        <option value="Cobar">Cobar</option>
+        <option value="CoffsHarbour">Coffs Harbour</option>
+        <option value="Moree">Moree</option>
+        <option value="Newcastle">Newcastle</option>
+        <option value="NorahHead">Norah Head</option>
+        <option value="NorfolkIsland">Norfolk Island</option>
+        <option value="Penrith">Penrith</option>
+        <option value="Richmond">Richmond</option>
+        <option value="Sydney">Sydney</option>
+        <option value="SydneyAirport">Sydney Airport</option>
+        <option value="WaggaWagga">Wagga Wagga</option>
+        <option value="Williamtown">Williamtown</option>
+        <option value="Wollongong">Wollongong</option>
+        <option value="Canberra">Canberra</option>
+        <option value="Tuggeranong">Tuggeranong</option>
+        <option value="MountGinini">Mount Ginini</option>
+        <option value="Ballarat">Ballarat</option>
+        <option value="Bendigo">Bendigo</option>
+        <option value="Sale">Sale</option>
+        <option value="MelbourneAirport">Melbourne Airport</option>
+        <option value="Melbourne">Melbourne</option>
+        <option value="Mildura">Mildura</option>
+        <option value="Nhil">Nhil</option>
+        <option value="Portland">Portland</option>
+        <option value="Watsonia">Watsonia</option>
+        <option value="Dartmoor">Dartmoor</option>
+        <option value="Brisbane">Brisbane</option>
+        <option value="Cairns">Cairns</option>
+        <option value="GoldCoast">Gold Coast</option>
+        <option value="Townsville">Townsville</option>
+        <option value="Adelaide">Adelaide</option>
+        <option value="MountGambier">Mount Gambier</option>
+        <option value="Nuriootpa">Nuriootpa</option>
+        <option value="Woomera">Woomera</option>
+        <option value="Albany">Albany</option>
+        <option value="Witchcliffe">Witchcliffe</option>
+        <option value="PearceRAAF">Pearce RAAF</option>
+        <option value="PerthAirport">Perth Airport</option>
+        <option value="Perth">Perth</option>
+        <option value="SalmonGums">Salmon Gums</option>
+        <option value="Walpole">Walpole</option>
+        <option value="Hobart">Hobart</option>
+        <option value="Launceston">Launceston</option>
+        <option value="AliceSprings">Alice Springs</option>
+        <option value="Darwin">Darwin</option>
+        <option value="Katherine">Katherine</option>
+        <option value="Uluru">Uluru</option>
+      </select><br>
+      <input class = "input" type="text" name="MinTemp" placeholder="Mininum Temperature" required="required" /><br>
+      <input class ="input" type="text" name="MaxTemp" placeholder="Maximum Temperature" required="required" /><br>
+      <input class ="input" type="text" name="Rainfall" placeholder="Rainfall" required="required" /><br>
+      <input class ="input"  type="text" name="Evaporation" placeholder="Evaporation" required="required" /><br>
+      <input class ="input"  type="text" name="Sunshine" placeholder="Sunshine" /><br>
+      <input class ="input"  type="text" name="WindGustDir" placeholder="Wind Gust Direction" required="required" /><br>
+      <input class ="input"  type="text" name="WindGustSpeed" placeholder="Wind Gust Speed" required="required" /><br>
+      <input class ="input"  type="text" name="WindDir9am" placeholder="Wind Direction at 9am" required="required" /><br>
+      <input class ="input"  type="text" name="WindDir3pm" placeholder="Wind Direction at 3pm" required="required" /><br>
+      <input class ="input"  type="text" name="WindSpeed9am" placeholder="Wind Speed at 9am" required="required" /><br>
+      <input class ="input"  type="text" name="WindSpeed3pm" placeholder="Wind Speed at 3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Humidity9am" placeholder="Humidity at 9am" required="required" /><br>
+      <input class ="input"  type="text" name="Humidity3pm" placeholder="Humidity at 3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Pressure9am" placeholder="Pressure at 9am" required="required" /><br>
+      <input class ="input"  type="text" name="Pressure3pm" placeholder="Pressure at 3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Cloud9am" placeholder="Cloud at 9am" required="required" /><br>
+      <input class ="input"  type="text" name="Cloud3pm" placeholder="Cloud at 3pm" required="required" /><br>
+      <input class ="input"  type="text" name="Temp9am" placeholder="Temp at 9am" required="required" /><br>
+      <input class ="input"  type="text" name="Temp3pm" placeholder="Temp at 3pm" required="required" /><br>
+      <select name="RainToday" required="required">
+        <option value="" disabled selected>Select Rain Today</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select><br>
+      <button type="submit" class="btn">Predict</button><br>
+    </form>
+  </div>
+    <br>
+    <br>
+    {{ prediction_text }}
+</body>
+</html>
